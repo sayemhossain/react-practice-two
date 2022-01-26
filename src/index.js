@@ -1,12 +1,11 @@
-import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
-reportWebVitals();
+function clock() {
+  return (
+    <h1 className="heading">
+      <span className="text">Time: {new Date().toLocaleTimeString()}</span>
+    </h1>
+  );
+}
+
+ReactDOM.render(clock(), document.getElementById("root"));
