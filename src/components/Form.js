@@ -57,7 +57,7 @@ export default class From extends React.Component {
           <br />
           <br />
           <select value={library} onChange={this.handleChange}>
-            <option value="React">Reat</option>
+            <option value="React">React</option>
             <option value="Angular">Angular</option>
           </select>
           <br />
